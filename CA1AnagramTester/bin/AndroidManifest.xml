@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ca1acronymtester"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.ca1acronymtester.MainActivityCA1acronymTester"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.ca1acronymtester.Testacronym"
+            android:label="@string/title_activity_test_acronym"
+            android:parentActivityName="com.example.ca1acronymtester.MainActivityCA1acronymTester" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ca1acronymtester.MainActivityCA1acronymTester" />
+        </activity>
+        <activity
+            android:name="com.example.ca1acronymtester.TestTitle"
+            android:label="@string/title_activity_test_title"
+            android:parentActivityName="com.example.ca1acronymtester.MainActivityCA1acronymTester" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ca1acronymtester.MainActivityCA1acronymTester" />
+        </activity>
+        <activity
+            android:name="com.example.ca1acronymtester.CAX10"
+            android:label="@string/title_activity_cax1"
+            android:parentActivityName="com.example.ca1acronymtester.MainActivityCA1acronymTester" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ca1acronymtester.MainActivityCA1acronymTester" />
+        </activity>
+        <activity
+            android:name="com.example.ca1acronymtester.CAX1"
+            android:label="@string/title_activity_cax1"
+            android:parentActivityName="com.example.ca1acronymtester.MainActivityCA1acronymTester" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ca1acronymtester.MainActivityCA1acronymTester" />
+        </activity>
+        <activity
+            android:name="com.example.ca1acronymtester.CA1X2"
+            android:label="@string/title_activity_ca1_x2"
+            android:parentActivityName="com.example.ca1acronymtester.MainActivityCA1acronymTester" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ca1acronymtester.MainActivityCA1acronymTester" />
+        </activity>
+    </application>
+
+</manifest>

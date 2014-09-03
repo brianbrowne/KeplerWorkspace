@@ -1,0 +1,500 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ca1acronymtester.CA1X2$PlaceholderFragment" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+
+	<TextView
+        android:id="@+id/textView1CAX2"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:text="Please press an option" />
+    
+    <Button
+        android:id="@+id/GetTitleCAX2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickGetTitleCAX2"
+        android:layout_below="@+id/textView1CAX2"
+        android:text="Get Title" />
+    
+    <Button
+        android:id="@+id/GetAnagramCAX2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickGetAnagramCAX2"
+        android:layout_below="@+id/textView1CAX2"
+        android:layout_toRightOf="@+id/GetTitleCAX2"
+        android:text="Get Anagram" />
+
+    <TextView
+        android:id="@+id/PullTestStringCAX2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GetTitleCAX2" />
+
+    <EditText
+        android:id="@+id/EditTextTestCAX2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter your guess"
+        android:layout_below="@+id/PullTestStringCAX2"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonTestAnagramCAX2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditTextTestCAX2"
+        android:onClick="onClickTestYourselfAnagramCAX2"
+        android:text="Test Anagram" />
+    
+    <Button
+        android:id="@+id/buttonTestTitleCAX2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/buttonTestAnagramCAX2"
+        android:layout_below="@+id/EditTextTestCAX2"
+        android:onClick="onClickTestYourselfTitleCAX2"
+        android:text="Test Title" />
+    
+    <TextView
+        android:id="@+id/TextViewTitleAnswerCAX2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonTestAnagramCAX2" />
+    
+    <TextView
+        android:id="@+id/CAX2Spacer"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/TextViewTitleAnswerCAX2" />
+    
+    <Button
+        android:id="@+id/CAX2TestAnswers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CAX2Spacer"
+        android:onClick="onClickCAX2TestAnswers"
+        android:layout_centerHorizontal="true"
+        android:text="Test Answers" />
+
+    <EditText
+        android:id="@+id/EditTextCAX2Answer1"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:hint="Enter your answer based on the letter shown"
+        android:layout_below="@+id/CAX2TestAnswers"
+        android:ems="10" >
+    </EditText>
+    
+    <TextView
+        android:id="@+id/CAX2Answer1Letter1"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CAX2TestAnswers"
+        android:layout_toRightOf="@+id/EditTextCAX2Answer1" />
+    
+    <TextView
+        android:id="@+id/textViewAnswer1CAX2"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditTextCAX2Answer1" />
+    
+    <EditText
+        android:id="@+id/EditTextCAX2Answer2"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:hint="Enter your answer based on the letter shown"
+        android:layout_below="@+id/textViewAnswer1CAX2"
+        android:ems="10" >
+    </EditText>
+    
+    <TextView
+        android:id="@+id/CAX2Answer1Letter2"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAnswer1CAX2"
+        android:layout_toRightOf="@+id/EditTextCAX2Answer2" />
+    
+    <TextView
+        android:id="@+id/textViewAnswer2CAX2"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditTextCAX2Answer2" />
+    
+    <EditText
+        android:id="@+id/EditTextCAX2Answer3"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:hint="Enter your answer based on the letter shown"
+        android:layout_below="@+id/textViewAnswer2CAX2"
+        android:ems="10" >
+    </EditText>
+    
+    <TextView
+        android:id="@+id/CAX2Answer1Letter3"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAnswer2CAX2"
+        android:layout_toRightOf="@+id/EditTextCAX2Answer3" />
+    
+    <TextView
+        android:id="@+id/textViewAnswer3CAX2"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditTextCAX2Answer3" />
+    
+    <EditText
+        android:id="@+id/EditTextCAX2Answer4"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:hint="Enter your answer based on the letter shown"
+        android:layout_below="@+id/textViewAnswer3CAX2"
+        android:ems="10" >
+    </EditText>
+    
+    <TextView
+        android:id="@+id/CAX2Answer1Letter4"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAnswer3CAX2"
+        android:layout_toRightOf="@+id/EditTextCAX2Answer4" />
+    
+    <TextView
+        android:id="@+id/textViewAnswer4CAX2"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditTextCAX2Answer4" />
+    
+    <EditText
+        android:id="@+id/EditTextCAX2Answer5"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:hint="Enter your answer based on the letter shown"
+        android:layout_below="@+id/textViewAnswer4CAX2"
+        android:ems="10" >
+    </EditText>
+    
+    <TextView
+        android:id="@+id/CAX2Answer1Letter5"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAnswer4CAX2"
+        android:layout_toRightOf="@+id/EditTextCAX2Answer5" />
+    
+    <TextView
+        android:id="@+id/textViewAnswer5CAX2"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditTextCAX2Answer5" />
+    
+    <EditText
+        android:id="@+id/EditTextCAX2Answer6"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:hint="Enter your answer based on the letter shown"
+        android:layout_below="@+id/textViewAnswer5CAX2"
+        android:ems="10" >
+    </EditText>
+    
+    <TextView
+        android:id="@+id/CAX2Answer1Letter6"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAnswer5CAX2"
+        android:layout_toRightOf="@+id/EditTextCAX2Answer6" />
+    
+    <TextView
+        android:id="@+id/textViewAnswer6CAX2"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditTextCAX2Answer6" />
+    
+    <EditText
+        android:id="@+id/EditTextCAX2Answer7"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:hint="Enter your answer based on the letter shown"
+        android:layout_below="@+id/textViewAnswer6CAX2"
+        android:ems="10" >
+    </EditText>
+    
+    <TextView
+        android:id="@+id/CAX2Answer1Letter7"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAnswer6CAX2"
+        android:layout_toRightOf="@+id/EditTextCAX2Answer7" />
+    
+    <TextView
+        android:id="@+id/textViewAnswer7CAX2"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditTextCAX2Answer7" />
+    
+    <EditText
+        android:id="@+id/EditTextCAX2Answer8"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:hint="Enter your answer based on the letter shown"
+        android:layout_below="@+id/textViewAnswer7CAX2"
+        android:ems="10" >
+    </EditText>
+    
+    <TextView
+        android:id="@+id/CAX2Answer1Letter8"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAnswer7CAX2"
+        android:layout_toRightOf="@+id/EditTextCAX2Answer8" />
+    
+    <TextView
+        android:id="@+id/textViewAnswer8CAX2"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditTextCAX2Answer8" />
+    
+    <EditText
+        android:id="@+id/EditTextCAX2Answer9"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:hint="Enter your answer based on the letter shown"
+        android:layout_below="@+id/textViewAnswer8CAX2"
+        android:ems="10" >
+    </EditText>
+    
+    <TextView
+        android:id="@+id/CAX2Answer1Letter9"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAnswer8CAX2"
+        android:layout_toRightOf="@+id/EditTextCAX2Answer9" />
+    
+    <TextView
+        android:id="@+id/textViewAnswer9CAX2"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditTextCAX2Answer9" />
+    
+    <EditText
+        android:id="@+id/EditTextCAX2Answer10"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:hint="Enter your answer based on the letter shown"
+        android:layout_below="@+id/textViewAnswer9CAX2"
+        android:ems="10" >
+    </EditText>
+    
+    <TextView
+        android:id="@+id/CAX2Answer1Letter10"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAnswer9CAX2"
+        android:layout_toRightOf="@+id/EditTextCAX2Answer10" />
+    
+    <TextView
+        android:id="@+id/textViewAnswer10CAX2"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditTextCAX2Answer10" />
+    
+    <EditText
+        android:id="@+id/EditTextCAX2Answer11"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:hint="Enter your answer based on the letter shown"
+        android:layout_below="@+id/textViewAnswer10CAX2"
+        android:ems="10" >
+    </EditText>
+    
+    <TextView
+        android:id="@+id/CAX2Answer1Letter11"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAnswer10CAX2"
+        android:layout_toRightOf="@+id/EditTextCAX2Answer11" />
+    
+    <TextView
+        android:id="@+id/textViewAnswer11CAX2"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditTextCAX2Answer11" />
+    
+    <EditText
+        android:id="@+id/EditTextCAX2Answer12"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:hint="Enter your answer based on the letter shown"
+        android:layout_below="@+id/textViewAnswer11CAX2"
+        android:ems="10" >
+    </EditText>
+    
+    <TextView
+        android:id="@+id/CAX2Answer1Letter12"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAnswer11CAX2"
+        android:layout_toRightOf="@+id/EditTextCAX2Answer12" />
+    
+    <TextView
+        android:id="@+id/textViewAnswer12CAX2"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditTextCAX2Answer12" />
+    
+    <EditText
+        android:id="@+id/EditTextCAX2Answer13"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:hint="Enter your answer based on the letter shown"
+        android:layout_below="@+id/textViewAnswer12CAX2"
+        android:ems="10" >
+    </EditText>
+    
+    <TextView
+        android:id="@+id/CAX2Answer1Letter13"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAnswer12CAX2"
+        android:layout_toRightOf="@+id/EditTextCAX2Answer13" />
+    
+    <TextView
+        android:id="@+id/textViewAnswer13CAX2"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditTextCAX2Answer13" />
+    
+    <EditText
+        android:id="@+id/EditTextCAX2Answer14"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:hint="Enter your answer based on the letter shown"
+        android:layout_below="@+id/textViewAnswer13CAX2"
+        android:ems="10" >
+    </EditText>
+    
+    <TextView
+        android:id="@+id/CAX2Answer1Letter14"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAnswer13CAX2"
+        android:layout_toRightOf="@+id/EditTextCAX2Answer14" />
+    
+    <TextView
+        android:id="@+id/textViewAnswer14CAX2"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditTextCAX2Answer14" />
+    
+    <EditText
+        android:id="@+id/EditTextCAX2Answer15"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:hint="Enter your answer based on the letter shown"
+        android:layout_below="@+id/textViewAnswer14CAX2"
+        android:ems="10" >
+    </EditText>
+    
+    <TextView
+        android:id="@+id/CAX2Answer1Letter15"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAnswer14CAX2"
+        android:layout_toRightOf="@+id/EditTextCAX2Answer15" />
+    
+    <TextView
+        android:id="@+id/textViewAnswer15CAX2"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditTextCAX2Answer15" />
+    
+    <EditText
+        android:id="@+id/EditTextCAX2Answer16"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:hint="Enter your answer based on the letter shown"
+        android:layout_below="@+id/textViewAnswer15CAX2"
+        android:ems="10" >
+    </EditText>
+    
+    <TextView
+        android:id="@+id/CAX2Answer1Letter16"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAnswer15CAX2"
+        android:layout_toRightOf="@+id/EditTextCAX2Answer16" />
+    
+    <TextView
+        android:id="@+id/textViewAnswer16CAX2"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditTextCAX2Answer16" />
+    
+    <EditText
+        android:id="@+id/EditTextCAX2Answer17"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:hint="Enter your answer based on the letter shown"
+        android:layout_below="@+id/textViewAnswer16CAX2"
+        android:ems="10" >
+    </EditText>
+    
+    <TextView
+        android:id="@+id/CAX2Answer1Letter17"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAnswer16CAX2"
+        android:layout_toRightOf="@+id/EditTextCAX2Answer17" />
+    
+    <TextView
+        android:id="@+id/textViewAnswer17CAX2"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditTextCAX2Answer17" />
+    
+    <EditText
+        android:id="@+id/EditTextCAX2Answer18"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:hint="Enter your answer based on the letter shown"
+        android:layout_below="@+id/textViewAnswer17CAX2"
+        android:ems="10" >
+    </EditText>
+    
+    <TextView
+        android:id="@+id/CAX2Answer1Letter18"
+        android:layout_width="50dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAnswer17CAX2"
+        android:layout_toRightOf="@+id/EditTextCAX2Answer18" />
+    
+    <TextView
+        android:id="@+id/textViewAnswer18CAX2"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditTextCAX2Answer18" />
+    
+    <TextView
+        android:id="@+id/CAX2FinalSpacer"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_below="@+id/textViewAnswer18CAX2" />
+    
+    
+
+</RelativeLayout>
+
+</ScrollView>

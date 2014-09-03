@@ -1,0 +1,88 @@
+package com.example.ca1anagramtester;
+
+import android.support.v7.app.ActionBarActivity;
+import android.support.v4.app.Fragment;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.TextView;
+
+public class CAX1 extends ActionBarActivity {
+	
+	EditText EditTextTestCAX1;			TextView TextViewTitleAnswerCAX1;			TextView textViewCAX1;
+	String useranswerCAX1;
+	
+	EditText EditTextCAX1Answer1;		EditText EditTextCAX1Answer2;		EditText EditTextCAX1Answer3;
+	EditText EditTextCAX1Answer4;		EditText EditTextCAX1Answer5;		EditText EditTextCAX1Answer6;
+	EditText EditTextCAX1Answer7;		EditText EditTextCAX1Answer8;		EditText EditTextCAX1Answer9;
+	EditText EditTextCAX1Answer10;		EditText EditTextCAX1Answer11;		EditText EditTextCAX1Answer12;
+	EditText EditTextCAX1Answer13;		EditText EditTextCAX1Answer14;		EditText EditTextCAX1Answer15;
+    
+	
+	TextView CAX1Answer1Letter1;		TextView CAX1Answer1Letter2;		TextView CAX1Answer1Letter3;
+	TextView CAX1Answer1Letter4;		TextView CAX1Answer1Letter5;		TextView CAX1Answer1Letter6;
+	TextView CAX1Answer1Letter7;		TextView CAX1Answer1Letter8;		TextView CAX1Answer1Letter9;
+	TextView CAX1Answer1Letter10;		TextView CAX1Answer1Letter11;		TextView CAX1Answer1Letter12;
+	TextView CAX1Answer1Letter13;		TextView CAX1Answer1Letter14;		TextView CAX1Answer1Letter15;
+    
+	
+	TextView textViewAnswer1CAX1;		TextView textViewAnswer2CAX1;		TextView textViewAnswer3CAX1;		TextView textViewAnswer4CAX1;
+	TextView textViewAnswer5CAX1;		TextView textViewAnswer6CAX1;		TextView textViewAnswer7CAX1;		TextView textViewAnswer8CAX1;
+	TextView textViewAnswer9CAX1;		TextView textViewAnswer10CAX1;		TextView textViewAnswer11CAX1;		TextView textViewAnswer12CAX1;
+	TextView textViewAnswer13CAX1;		TextView textViewAnswer14CAX1;		TextView textViewAnswer15CAX1;
+
+	int randomInt;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_cax1);
+
+		if (savedInstanceState == null) {
+			getSupportFragmentManager().beginTransaction()
+					.add(R.id.container, new PlaceholderFragment()).commit();
+		}
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.cax1, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Handle action bar item clicks here. The action bar will
+		// automatically handle clicks on the Home/Up button, so long
+		// as you specify a parent activity in AndroidManifest.xml.
+		int id = item.getItemId();
+		if (id == R.id.action_settings) {
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+
+	/**
+	 * A placeholder fragment containing a simple view.
+	 */
+	public static class PlaceholderFragment extends Fragment {
+
+		public PlaceholderFragment() {
+		}
+
+		@Override
+		public View onCreateView(LayoutInflater inflater, ViewGroup container,
+				Bundle savedInstanceState) {
+			View rootView = inflater.inflate(R.layout.fragment_cax1, container,
+					false);
+			return rootView;
+		}
+	}
+
+}
