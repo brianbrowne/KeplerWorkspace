@@ -1,0 +1,131 @@
+package com.example.ca1anagramtester2;
+
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.ActionBar;
+import android.support.v4.app.Fragment;
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.os.Build;
+
+public class CA1X8 extends ActionBarActivity {
+	
+	EditText EditTextTestCA1X7;			TextView TextViewTitleAnswerCA1X7;			TextView textViewCA1X7;
+	String useranswerCA1X7;
+	
+	EditText EditTextCA1X7Answer1;		EditText EditTextCA1X7Answer2;		EditText EditTextCA1X7Answer3;
+	EditText EditTextCA1X7Answer4;		EditText EditTextCA1X7Answer5;		EditText EditTextCA1X7Answer6;
+	EditText EditTextCA1X7Answer7;		EditText EditTextCA1X7Answer8;		EditText EditTextCA1X7Answer9;
+	EditText EditTextCA1X7Answer10;		EditText EditTextCA1X7Answer11;		EditText EditTextCA1X7Answer12;
+	EditText EditTextCA1X7Answer13;		EditText EditTextCA1X7Answer14;		EditText EditTextCA1X7Answer15;		EditText EditTextCA1X7Answer16;
+	EditText EditTextCA1X7Answer17;		EditText EditTextCA1X7Answer18;
+    
+	
+	TextView CA1X7Answer1Letter1;		TextView CA1X7Answer1Letter2;		TextView CA1X7Answer1Letter3;
+	TextView CA1X7Answer1Letter4;		TextView CA1X7Answer1Letter5;		TextView CA1X7Answer1Letter6;
+	TextView CA1X7Answer1Letter7;		TextView CA1X7Answer1Letter8;		TextView CA1X7Answer1Letter9;
+	TextView CA1X7Answer1Letter10;		TextView CA1X7Answer1Letter11;		TextView CA1X7Answer1Letter12;
+	TextView CA1X7Answer1Letter13;		TextView CA1X7Answer1Letter14;		TextView CA1X7Answer1Letter15;		TextView CA1X7Answer1Letter16;
+	TextView CA1X7Answer1Letter17;		TextView CA1X7Answer1Letter18;
+    
+	
+	TextView textViewAnswer1CA1X7;		TextView textViewAnswer2CA1X7;		TextView textViewAnswer3CA1X7;		TextView textViewAnswer4CA1X7;
+	TextView textViewAnswer5CA1X7;		TextView textViewAnswer6CA1X7;		TextView textViewAnswer7CA1X7;		TextView textViewAnswer8CA1X7;
+	TextView textViewAnswer9CA1X7;		TextView textViewAnswer10CA1X7;		TextView textViewAnswer11CA1X7;		TextView textViewAnswer12CA1X7;
+	TextView textViewAnswer13CA1X7;		TextView textViewAnswer14CA1X7;		TextView textViewAnswer15CA1X7;		TextView textViewAnswer16CA1X7;
+	TextView textViewAnswer17CA1X7;		TextView textViewAnswer18CA1X7;
+
+	int randomInt;
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_ca1_x8);
+		
+		EditTextTestCA1X7 = (EditText)findViewById(R.id.EditTextTestCA1X7);
+		textViewCA1X7 = (TextView) findViewById(R.id.PullTestStringCA1X7);
+		TextViewTitleAnswerCA1X7 = (TextView) findViewById(R.id.TextViewTitleAnswerCA1X7);
+		
+		
+		CA1X7Answer1Letter1 = (TextView) findViewById(R.id.CA1X7Answer1Letter1);		CA1X7Answer1Letter2 = (TextView) findViewById(R.id.CA1X7Answer1Letter2);
+		CA1X7Answer1Letter3 = (TextView) findViewById(R.id.CA1X7Answer1Letter3);		CA1X7Answer1Letter4 = (TextView) findViewById(R.id.CA1X7Answer1Letter4);
+		CA1X7Answer1Letter5 = (TextView) findViewById(R.id.CA1X7Answer1Letter5);		CA1X7Answer1Letter6 = (TextView) findViewById(R.id.CA1X7Answer1Letter6);
+		CA1X7Answer1Letter7 = (TextView) findViewById(R.id.CA1X7Answer1Letter7);		CA1X7Answer1Letter8 = (TextView) findViewById(R.id.CA1X7Answer1Letter8);
+		CA1X7Answer1Letter9 = (TextView) findViewById(R.id.CA1X7Answer1Letter9);		CA1X7Answer1Letter10 = (TextView) findViewById(R.id.CA1X7Answer1Letter10);
+		CA1X7Answer1Letter11 = (TextView) findViewById(R.id.CA1X7Answer1Letter11);		CA1X7Answer1Letter12 = (TextView) findViewById(R.id.CA1X7Answer1Letter12);
+		CA1X7Answer1Letter13 = (TextView) findViewById(R.id.CA1X7Answer1Letter13);		CA1X7Answer1Letter14 = (TextView) findViewById(R.id.CA1X7Answer1Letter14);
+		CA1X7Answer1Letter15 = (TextView) findViewById(R.id.CA1X7Answer1Letter15);		CA1X7Answer1Letter16 = (TextView) findViewById(R.id.CA1X7Answer1Letter16);
+		CA1X7Answer1Letter17 = (TextView) findViewById(R.id.CA1X7Answer1Letter17);		CA1X7Answer1Letter18 = (TextView) findViewById(R.id.CA1X7Answer1Letter18);
+		
+		
+		EditTextCA1X7Answer1 = (EditText)findViewById(R.id.EditTextCA1X7Answer1);		EditTextCA1X7Answer2 = (EditText)findViewById(R.id.EditTextCA1X7Answer2);
+		EditTextCA1X7Answer3 = (EditText)findViewById(R.id.EditTextCA1X7Answer3);		EditTextCA1X7Answer4 = (EditText)findViewById(R.id.EditTextCA1X7Answer4);
+		EditTextCA1X7Answer5 = (EditText)findViewById(R.id.EditTextCA1X7Answer5);		EditTextCA1X7Answer6 = (EditText)findViewById(R.id.EditTextCA1X7Answer6);
+		EditTextCA1X7Answer7 = (EditText)findViewById(R.id.EditTextCA1X7Answer7);		EditTextCA1X7Answer8 = (EditText)findViewById(R.id.EditTextCA1X7Answer8);
+		EditTextCA1X7Answer9 = (EditText)findViewById(R.id.EditTextCA1X7Answer9);		EditTextCA1X7Answer10 = (EditText)findViewById(R.id.EditTextCA1X7Answer10);
+		EditTextCA1X7Answer11 = (EditText)findViewById(R.id.EditTextCA1X7Answer11);		EditTextCA1X7Answer12 = (EditText)findViewById(R.id.EditTextCA1X7Answer12);
+		EditTextCA1X7Answer13 = (EditText)findViewById(R.id.EditTextCA1X7Answer13);		EditTextCA1X7Answer14 = (EditText)findViewById(R.id.EditTextCA1X7Answer14);
+		EditTextCA1X7Answer15 = (EditText)findViewById(R.id.EditTextCA1X7Answer15);		EditTextCA1X7Answer16 = (EditText)findViewById(R.id.EditTextCA1X7Answer16);
+		EditTextCA1X7Answer17 = (EditText)findViewById(R.id.EditTextCA1X7Answer17);		EditTextCA1X7Answer18 = (EditText)findViewById(R.id.EditTextCA1X7Answer18);		
+		
+		
+		textViewAnswer1CA1X7 = (TextView) findViewById(R.id.textViewAnswer1CA1X7);		textViewAnswer2CA1X7= (TextView) findViewById(R.id.textViewAnswer2CA1X7);
+		textViewAnswer3CA1X7 = (TextView) findViewById(R.id.textViewAnswer3CA1X7);		textViewAnswer4CA1X7 = (TextView) findViewById(R.id.textViewAnswer4CA1X7);
+		textViewAnswer5CA1X7 = (TextView) findViewById(R.id.textViewAnswer5CA1X7);		textViewAnswer6CA1X7 = (TextView) findViewById(R.id.textViewAnswer6CA1X7);
+		textViewAnswer7CA1X7 = (TextView) findViewById(R.id.textViewAnswer7CA1X7);		textViewAnswer8CA1X7 = (TextView) findViewById(R.id.textViewAnswer8CA1X7);
+		textViewAnswer9CA1X7 = (TextView) findViewById(R.id.textViewAnswer9CA1X7);		textViewAnswer10CA1X7 = (TextView) findViewById(R.id.textViewAnswer10CA1X7);
+		textViewAnswer11CA1X7 = (TextView) findViewById(R.id.textViewAnswer11CA1X7);		textViewAnswer12CA1X7 = (TextView) findViewById(R.id.textViewAnswer12CA1X7);
+		textViewAnswer13CA1X7 = (TextView) findViewById(R.id.textViewAnswer13CA1X7);		textViewAnswer14CA1X7 = (TextView) findViewById(R.id.textViewAnswer14CA1X7);
+		textViewAnswer15CA1X7 = (TextView) findViewById(R.id.textViewAnswer15CA1X7);		textViewAnswer16CA1X7 = (TextView) findViewById(R.id.textViewAnswer16CA1X7);
+		textViewAnswer17CA1X7 = (TextView) findViewById(R.id.textViewAnswer17CA1X7);		textViewAnswer18CA1X7 = (TextView) findViewById(R.id.textViewAnswer18CA1X7);
+
+
+		if (savedInstanceState == null) {
+			getSupportFragmentManager().beginTransaction()
+					.add(R.id.container, new PlaceholderFragment()).commit();
+		}
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.ca1_x8, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Handle action bar item clicks here. The action bar will
+		// automatically handle clicks on the Home/Up button, so long
+		// as you specify a parent activity in AndroidManifest.xml.
+		int id = item.getItemId();
+		if (id == R.id.action_settings) {
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+
+	/**
+	 * A placeholder fragment containing a simple view.
+	 */
+	public static class PlaceholderFragment extends Fragment {
+
+		public PlaceholderFragment() {
+		}
+
+		@Override
+		public View onCreateView(LayoutInflater inflater, ViewGroup container,
+				Bundle savedInstanceState) {
+			View rootView = inflater.inflate(R.layout.fragment_ca1_x8,
+					container, false);
+			return rootView;
+		}
+	}
+
+}

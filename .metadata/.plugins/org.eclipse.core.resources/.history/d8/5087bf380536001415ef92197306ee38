@@ -1,0 +1,141 @@
+<RelativeView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ca1anagramtester2.MainActivityCA1AcronymTester2$PlaceholderFragment" >
+
+    <ScrollView android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+        
+        
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+    android:gravity="center">
+    <Button
+            android:id="@+id/Testacronym"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:onClick="onClickTestacronym"
+            android:text="Test acronym" />
+
+        <TextView
+            android:id="@+id/Spacer2"
+            android:layout_width="match_parent"
+            android:layout_height="25dip"
+            android:layout_below="@+id/Testacronym"/>
+
+        <Button
+            android:id="@+id/TestTitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_below="@+id/Spacer2"
+            android:onClick="onClickTestTitle"
+            android:text="Test Title" />
+        
+        <TextView
+            android:id="@+id/Spacer3"
+            android:layout_width="match_parent"
+            android:layout_height="25dip"
+            android:layout_below="@+id/TestTitle"/>
+        
+        <Button
+        android:id="@+id/buttonCAX1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Spacer3"
+        
+        android:onClick="onClickCAX1"
+        android:text="CA X1" />
+        
+        <Button
+        android:id="@+id/buttonCAX2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonCAX1"
+        
+        android:onClick="onClickCAX2"
+        android:text="CA X2" />
+        
+        <Button
+        android:id="@+id/buttonCAX3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonCAX2"
+        
+        android:onClick="onClickCAX3"
+        android:text="CA X3" />
+        
+        <Button
+        android:id="@+id/buttonCAX4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonCAX3"
+        
+        android:onClick="onClickCAX4"
+        android:text="CA X4" />
+        
+        <Button
+        android:id="@+id/buttonCAX5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonCAX4"
+     
+        android:onClick="onClickCAX5"
+        android:text="CA X5" />
+        
+        <Button
+        android:id="@+id/buttonCAX6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonCAX5"
+     
+        android:onClick="onClickCAX6"
+        android:text="CA X6" />
+        
+        <Button
+        android:id="@+id/buttonCAX7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonCAX6"
+     
+        android:onClick="onClickCAX7"
+        android:text="CA X7" />
+        
+        <Button
+        android:id="@+id/buttonCAX8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonCAX7"
+     
+        android:onClick="onClickCAX8"
+        android:text="CA X8" />
+        
+        <Button
+        android:id="@+id/buttonCAX9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonCAX8"
+     
+        android:onClick="onClickCAX9"
+        android:text="CA X9" />
+        
+        <Button
+        android:id="@+id/buttonCAX10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonCAX9"
+     
+        android:onClick="onClickCAX10"
+        android:text="CA X10" />
+        
+        </RelativeLayout>
+    
+
+</ScrollView>
+</RelativeView>

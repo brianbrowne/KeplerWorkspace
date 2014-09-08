@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ca1anagramtester2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.ca1anagramtester2.MainActivityCA1AcronymTester2"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.ca1anagramtester2.TestTitle"
+            android:label="@string/title_activity_test_title"
+            android:parentActivityName="com.example.ca1anagramtester2.MainActivityCA1AnagramTester2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ca1anagramtester2.MainActivityCA1AnagramTester2" />
+        </activity>
+        <activity
+            android:name="com.example.ca1anagramtester2.TestAnagram"
+            android:label="@string/title_activity_test_anagram"
+            android:parentActivityName="com.example.ca1anagramtester2.MainActivityCA1AnagramTester2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ca1anagramtester2.MainActivityCA1AnagramTester2" />
+        </activity>
+        <activity
+            android:name="com.example.ca1anagramtester2.CAX10"
+            android:label="@string/title_activity_cax10"
+            android:parentActivityName="com.example.ca1anagramtester2.MainActivityCA1AnagramTester2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ca1anagramtester2.MainActivityCA1AnagramTester2" />
+        </activity>
+        <activity
+            android:name="com.example.ca1anagramtester2.CAX1"
+            android:label="@string/title_activity_cax1" >
+        </activity>
+        <activity
+            android:name="com.example.ca1anagramtester2.CA1X2"
+            android:label="@string/title_activity_ca1_x2"
+            android:parentActivityName="com.example.ca1anagramtester2.MainActivityCA1AcronymTester2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ca1anagramtester2.MainActivityCA1AcronymTester2" />
+        </activity>
+        <activity
+            android:name="com.example.ca1anagramtester2.CA1X3"
+            android:label="@string/title_activity_ca1_x3"
+            android:parentActivityName="com.example.ca1anagramtester2.MainActivityCA1AcronymTester2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ca1anagramtester2.MainActivityCA1AcronymTester2" />
+        </activity>
+        <activity
+            android:name="com.example.ca1anagramtester2.CA1X4"
+            android:label="@string/title_activity_ca1_x4"
+            android:parentActivityName="com.example.ca1anagramtester2.MainActivityCA1AcronymTester2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ca1anagramtester2.MainActivityCA1AcronymTester2" />
+        </activity>
+        <activity
+            android:name="com.example.ca1anagramtester2.CA1X5"
+            android:label="@string/title_activity_ca1_x5"
+            android:parentActivityName="com.example.ca1anagramtester2.MainActivityCA1AcronymTester2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ca1anagramtester2.MainActivityCA1AcronymTester2" />
+        </activity>
+        <activity
+            android:name="com.example.ca1anagramtester2.CA1X6"
+            android:label="@string/title_activity_ca1_x6"
+            android:parentActivityName="com.example.ca1anagramtester2.MainActivityCA1AcronymTester2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ca1anagramtester2.MainActivityCA1AcronymTester2" />
+        </activity>
+    </application>
+
+</manifest>

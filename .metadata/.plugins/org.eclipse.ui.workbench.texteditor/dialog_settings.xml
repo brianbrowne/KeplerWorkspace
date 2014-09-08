@@ -13,26 +13,26 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="CA1X4" key="selection"/>
+		<item value="CA1X9" key="selection"/>
 		<list key="findhistory">
-			<item value="CAX1"/>
+			<item value="CA1X8"/>
 			<item value="TestYourselfTitle"/>
+			<item value="TestYourselfAcronym"/>
+			<item value="TestAcronym"/>
+			<item value="GetAcronym"/>
+			<item value="GetAnagram"/>
 			<item value="GetTitle"/>
-			<item value="FIST AID MMM"/>
-			<item value="CERAMIC FAD"/>
-			<item value="The aims of regulation"/>
-			<item value="correct answer"/>
-			<item value="#00FF00"/>
+			<item value="get"/>
 		</list>
 		<list key="replacehistory">
+			<item value="CA1X9"/>
+			<item value="CAX10"/>
+			<item value="CA1X8"/>
+			<item value="CA1X7"/>
+			<item value="CA1X6"/>
+			<item value="CA1X5"/>
 			<item value="CA1X4"/>
 			<item value="CAX3"/>
-			<item value="#006400"/>
-			<item value="CAX2"/>
-			<item value="Acronym"/>
-			<item value="acronym"/>
-			<item value="CAX1"/>
-			<item value=""/>
 		</list>
 	</section>
 </section>
